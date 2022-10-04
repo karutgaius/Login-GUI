@@ -21,7 +21,7 @@ class App(customtkinter.CTk):
         #----------------------------------------------------------
         #Window Configuration
         self.title("Database Login")
-        self.wm_iconbitmap('Assets/logo.ico')
+        # self.wm_iconbitmap('Assets/logo.ico') #Logo for window
         self.geometry(f"{App.WIDTH}x{App.HEIGHT}")
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
