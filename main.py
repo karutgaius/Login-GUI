@@ -1,8 +1,6 @@
-from importlib.metadata import entry_points
 import tkinter
 import tkinter.messagebox
 import customtkinter
-from matplotlib.pyplot import show
 import pyautogui
 
 sys_resolution = pyautogui.size()
@@ -17,7 +15,6 @@ class App(customtkinter.CTk):
 
     def __init__(self):
         super().__init__()
-
         #----------------------------------------------------------
         #Window Configuration
         self.title("Database Login")
