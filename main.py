@@ -28,7 +28,8 @@ class App(customtkinter.CTk):
         self.main_frame = customtkinter.CTkFrame(master=self,
                                                  width=App.WIDTH,
                                                  corner_radius=0)
-        self.main_frame.grid(row=0, column=0, sticky="nswe")
+        self.main_frame.pack()
+        # self.main_frame.grid(row=0, column=0, sticky="nswe")
 
         self.main_frame.grid_rowconfigure(0, minsize=0)
         self.main_frame.grid_rowconfigure(5, weight=1) 
